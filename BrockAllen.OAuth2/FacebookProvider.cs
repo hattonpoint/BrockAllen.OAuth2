@@ -25,6 +25,9 @@ namespace BrockAllen.OAuth2
             {
                 Scope = scope;
             }
+
+            this.additionalParams = new System.Collections.Specialized.NameValueCollection();
+            this.additionalParams.Add("fields", "email");
         }
 
         static Dictionary<string, string> supportedClaimTypes = new Dictionary<string, string>();
